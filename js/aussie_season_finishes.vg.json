@@ -1,0 +1,81 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Australian F1 Drivers, Season by Season",
+    "subtitle": "Each square is one season for one driver — darker red means a better average race finish",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "offset": 12,
+    "subtitleColor": "#666"
+  },
+  "width": "container",
+  "height": 480,
+  "background": "transparent",
+  "data": {"url": "data/aussie-season-finishes.json"},
+  "transform": [
+    {
+      "joinaggregate": [{"op": "min", "field": "season", "as": "debutSeason"}],
+      "groupby": ["driverId"]
+    }
+  ],
+  "layer": [
+    {
+      "description": "Heatmap cells coloured by average finish position",
+      "mark": {
+        "type": "rect",
+        "stroke": "white",
+        "strokeWidth": 1,
+        "tooltip": {"content": "data"}
+      },
+      "encoding": {
+        "x": {
+          "field": "season",
+          "type": "ordinal",
+          "axis": {"title": "Season", "labelFontSize": 9, "labelAngle": -90, "labelOverlap": false}
+        },
+        "y": {
+          "field": "driverName",
+          "type": "nominal",
+          "sort": {"field": "debutSeason", "order": "ascending"},
+          "axis": {"title": null, "labelFontSize": 11, "labelPadding": 6}
+        },
+        "color": {
+          "field": "avgFinish",
+          "type": "quantitative",
+          "scale": {
+            "domain": [1, 18],
+            "range": ["#7a0000", "#E10600", "#f08585", "#f5d0d0", "#eeeeee"]
+          },
+          "legend": {
+            "title": "Avg race finish",
+            "orient": "right",
+            "labelFontSize": 10,
+            "titleFontSize": 11,
+            "format": ".0f"
+          }
+        }
+      }
+    },
+    {
+      "description": "Win count text overlay — only shown when wins > 0",
+      "transform": [{"filter": "datum.wins > 0"}],
+      "mark": {
+        "type": "text",
+        "fontSize": 10,
+        "fontWeight": "bold",
+        "color": "white"
+      },
+      "encoding": {
+        "x": {"field": "season", "type": "ordinal"},
+        "y": {"field": "driverName", "type": "nominal", "sort": {"field": "debutSeason", "order": "ascending"}},
+        "text": {"field": "wins"}
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": null},
+    "font": "system-ui, -apple-system, sans-serif",
+    "axis": {"domain": false, "ticks": false}
+  }
+}

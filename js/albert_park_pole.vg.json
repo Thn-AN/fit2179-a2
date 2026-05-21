@@ -1,0 +1,93 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "The Australian GP, in Seconds",
+    "subtitle": "Pole and average qualifying times at Albert Park (1996–today), with Adelaide's 1994 final round for context",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "offset": 12,
+    "subtitleColor": "#666"
+  },
+  "width": "container",
+  "height": 460,
+  "background": "transparent",
+  "data": {"url": "data/albert-park-pole.json"},
+  "encoding": {
+    "x": {
+      "field": "season",
+      "type": "quantitative",
+      "scale": {"domain": [1993, 2027], "nice": false},
+      "axis": {"title": "Season", "tickCount": 10, "format": "d", "labelFontSize": 11}
+    }
+  },
+  "layer": [
+    {
+      "description": "Eras: shaded background bands for engine/rule eras",
+      "data": {
+        "values": [
+          {"start": 1993, "end": 2005.5, "era": "V10 / V8 era"},
+          {"start": 2005.5, "end": 2013.5, "era": "V8 era"},
+          {"start": 2013.5, "end": 2021.5, "era": "Hybrid V6 (turbo)"},
+          {"start": 2021.5, "end": 2025.5, "era": "Ground-effect era"},
+          {"start": 2025.5, "end": 2027, "era": "2026 regulations"}
+        ]
+      },
+      "mark": {"type": "rect", "opacity": 0.06},
+      "encoding": {
+        "x": {"field": "start", "type": "quantitative"},
+        "x2": {"field": "end"},
+        "color": {
+          "field": "era",
+          "type": "nominal",
+          "scale": {"range": ["#888", "#1a73e8", "#34a853", "#fbbc04", "#ea4335"]},
+          "legend": {"title": "Era", "orient": "right", "labelFontSize": 10}
+        }
+      }
+    },
+    {
+      "description": "Slowest time, faint line",
+      "mark": {"type": "line", "color": "#aaa", "strokeDash": [3, 3], "strokeWidth": 1.2, "opacity": 0.7, "interpolate": "monotone"},
+      "encoding": {
+        "y": {
+          "field": "slowestTime",
+          "type": "quantitative",
+          "scale": {"domain": [73, 120]},
+          "axis": {"title": "Qualifying time (seconds)", "values": [75, 80, 85, 90, 95, 100, 105, 110, 115, 120], "format": ".0f", "labelFontSize": 11, "grid": true, "gridColor": "#eee"}
+        }
+      }
+    },
+    {
+      "description": "Average time",
+      "mark": {"type": "line", "color": "#666", "strokeWidth": 1.6, "opacity": 0.9, "interpolate": "monotone"},
+      "encoding": {
+        "y": {"field": "avgTime", "type": "quantitative"}
+      }
+    },
+    {
+      "description": "Pole time, the headline",
+      "mark": {"type": "line", "color": "#E10600", "strokeWidth": 2.8, "interpolate": "monotone"},
+      "encoding": {
+        "y": {"field": "poleTime", "type": "quantitative"}
+      }
+    },
+    {
+      "description": "Pole markers + tooltip targets",
+      "mark": {
+        "type": "circle",
+        "color": "#E10600",
+        "size": 70,
+        "stroke": "white",
+        "strokeWidth": 1.5,
+        "tooltip": {"content": "data"}
+      },
+      "encoding": {
+        "y": {"field": "poleTime", "type": "quantitative"}
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": null},
+    "font": "system-ui, -apple-system, sans-serif"
+  }
+}

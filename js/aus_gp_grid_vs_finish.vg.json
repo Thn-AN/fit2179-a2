@@ -1,0 +1,93 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Does Pole Position Help at Home?",
+    "subtitle": "Every Australian Grand Prix starter, Adelaide 1985 onwards — grid position vs final classified finish. Australians in red.",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "offset": 12,
+    "subtitleColor": "#666"
+  },
+  "width": 700,
+  "height": 600,
+  "background": "transparent",
+  "data": {"url": "data/aus-gp-grid-vs-finish.json"},
+  "layer": [
+    {
+      "description": "Diagonal reference line (no change between grid and finish)",
+      "data": {"values": [{}]},
+      "mark": {"type": "rule", "color": "#bbb", "strokeDash": [5, 4], "strokeWidth": 1},
+      "encoding": {
+        "x": {"datum": 1, "type": "quantitative"},
+        "x2": {"datum": 22},
+        "y": {"datum": 1, "type": "quantitative"},
+        "y2": {"datum": 22}
+      }
+    },
+    {
+      "description": "Non-Australian drivers (faint background)",
+      "transform": [
+        {"filter": "!datum.isAussie && datum.gridPos != null && datum.finishPos != null"}
+      ],
+      "mark": {
+        "type": "circle",
+        "color": "#999",
+        "opacity": 0.25,
+        "size": 60
+      },
+      "encoding": {
+        "x": {
+          "field": "gridPos",
+          "type": "quantitative",
+          "scale": {"domain": [0, 23], "nice": false},
+          "axis": {"title": "Grid position (qualifying)", "values": [1, 5, 10, 15, 20], "labelFontSize": 11}
+        },
+        "y": {
+          "field": "finishPos",
+          "type": "quantitative",
+          "scale": {"domain": [0, 23], "reverse": true, "nice": false},
+          "axis": {"title": "Finishing position", "values": [1, 5, 10, 15, 20], "labelFontSize": 11}
+        }
+      }
+    },
+    {
+      "description": "Australian drivers (foreground, highlighted)",
+      "transform": [
+        {"filter": "datum.isAussie && datum.gridPos != null && datum.finishPos != null"}
+      ],
+      "mark": {
+        "type": "circle",
+        "color": "#E10600",
+        "opacity": 0.9,
+        "size": 220,
+        "stroke": "white",
+        "strokeWidth": 1.5,
+        "tooltip": {"content": "data"}
+      },
+      "encoding": {
+        "x": {"field": "gridPos", "type": "quantitative"},
+        "y": {"field": "finishPos", "type": "quantitative"}
+      }
+    },
+    {
+      "description": "Quadrant labels",
+      "data": {
+        "values": [
+          {"x": 18, "y": 3, "text": "GAINED POSITIONS"},
+          {"x": 4, "y": 19, "text": "LOST POSITIONS"}
+        ]
+      },
+      "mark": {"type": "text", "color": "#bbb", "fontSize": 11, "fontWeight": "bold"},
+      "encoding": {
+        "x": {"field": "x", "type": "quantitative"},
+        "y": {"field": "y", "type": "quantitative"},
+        "text": {"field": "text"}
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": null},
+    "font": "system-ui, -apple-system, sans-serif"
+  }
+}

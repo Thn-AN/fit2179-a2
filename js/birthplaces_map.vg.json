@@ -1,0 +1,94 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Where Australia's F1 Drivers Were Born",
+    "subtitle": "Every Australian to start a Formula One Grand Prix, from Tony Gaze (1952) to Oscar Piastri",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "offset": 12,
+    "subtitleColor": "#666"
+  },
+  "width": "container",
+  "height": 550,
+  "background": "transparent",
+  "projection": {
+    "type": "mercator",
+    "center": [134, -28],
+    "scale": 800
+  },
+  "layer": [
+    {
+      "data": {
+        "url": "data/au-states.topojson",
+        "format": {"type": "topojson", "feature": "austates"}
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#f4ede4",
+        "stroke": "#ffffff",
+        "strokeWidth": 1
+      }
+    },
+    {
+      "data": {"url": "data/aussie-drivers-bios.json"},
+      "transform": [
+        {"filter": "datum.lat != null && datum.lng != null"}
+      ],
+      "mark": {
+        "type": "circle",
+        "opacity": 0.85,
+        "stroke": "white",
+        "strokeWidth": 1.5,
+        "color": "#E10600"
+      },
+      "encoding": {
+        "longitude": {"field": "lng", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "size": {"value": 220},
+        "tooltip": [
+          {"field": "givenName", "title": "First name"},
+          {"field": "familyName", "title": "Last name"},
+          {"field": "birthPlace", "title": "Birthplace"},
+          {"field": "birthDate", "title": "Born"}
+        ]
+      }
+    },
+    {
+      "data": {"url": "data/aussie-drivers-bios.json"},
+      "transform": [
+        {"filter": "datum.lat != null && datum.lng != null"},
+        {
+          "window": [{"op": "rank", "as": "cityRank"}],
+          "groupby": ["birthPlace"],
+          "sort": [{"field": "dateOfBirth"}]
+        },
+        {
+          "joinaggregate": [{"op": "count", "as": "cityCount"}],
+          "groupby": ["birthPlace"]
+        },
+        {
+          "calculate": "datum.lat - ((datum.cityRank - 1) - (datum.cityCount - 1) / 2) * 0.8",
+          "as": "labelLat"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "fontSize": 10,
+        "fontWeight": 600,
+        "color": "#222",
+        "dx": 10
+      },
+      "encoding": {
+        "longitude": {"field": "lng", "type": "quantitative"},
+        "latitude": {"field": "labelLat", "type": "quantitative"},
+        "text": {"field": "familyName"}
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": null},
+    "font": "system-ui, -apple-system, sans-serif"
+  }
+}

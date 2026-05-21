@@ -1,0 +1,282 @@
+[
+  {
+    "season": 1994,
+    "circuit": "adelaide",
+    "circuitName": "Adelaide Street Circuit",
+    "poleTime": 76.179,
+    "avgTime": 78.603,
+    "slowestTime": 82.529,
+    "fieldSize": 26,
+    "poleDriver": "Nigel Mansell"
+  },
+  {
+    "season": 1996,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 92.371,
+    "avgTime": 94.766,
+    "slowestTime": 96.298,
+    "fieldSize": 20,
+    "poleDriver": "Jacques Villeneuve"
+  },
+  {
+    "season": 1997,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 89.369,
+    "avgTime": 93.068,
+    "slowestTime": 95.972,
+    "fieldSize": 22,
+    "poleDriver": "Jacques Villeneuve"
+  },
+  {
+    "season": 1998,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 90.01,
+    "avgTime": 92.884,
+    "slowestTime": 95.301,
+    "fieldSize": 22,
+    "poleDriver": "Mika H\u00e4kkinen"
+  },
+  {
+    "season": 1999,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 90.462,
+    "avgTime": 93.206,
+    "slowestTime": 97.013,
+    "fieldSize": 22,
+    "poleDriver": "Mika H\u00e4kkinen"
+  },
+  {
+    "season": 2000,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 90.556,
+    "avgTime": 92.361,
+    "slowestTime": 94.705,
+    "fieldSize": 22,
+    "poleDriver": "Mika H\u00e4kkinen"
+  },
+  {
+    "season": 2003,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 87.173,
+    "avgTime": 88.972,
+    "slowestTime": 91.723,
+    "fieldSize": 18,
+    "poleDriver": "Michael Schumacher"
+  },
+  {
+    "season": 2004,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 84.408,
+    "avgTime": 86.693,
+    "slowestTime": 90.681,
+    "fieldSize": 17,
+    "poleDriver": "Michael Schumacher"
+  },
+  {
+    "season": 2005,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 88.279,
+    "avgTime": 93.199,
+    "slowestTime": 117.931,
+    "fieldSize": 18,
+    "poleDriver": "Giancarlo Fisichella"
+  },
+  {
+    "season": 2006,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 85.229,
+    "avgTime": 87.98,
+    "slowestTime": 96.164,
+    "fieldSize": 22,
+    "poleDriver": "Jenson Button"
+  },
+  {
+    "season": 2007,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 85.326,
+    "avgTime": 87.173,
+    "slowestTime": 91.932,
+    "fieldSize": 22,
+    "poleDriver": "Kimi R\u00e4ikk\u00f6nen"
+  },
+  {
+    "season": 2008,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 85.187,
+    "avgTime": 86.527,
+    "slowestTime": 89.059,
+    "fieldSize": 22,
+    "poleDriver": "Lewis Hamilton"
+  },
+  {
+    "season": 2009,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 84.783,
+    "avgTime": 85.695,
+    "slowestTime": 86.964,
+    "fieldSize": 20,
+    "poleDriver": "Jenson Button"
+  },
+  {
+    "season": 2010,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 83.919,
+    "avgTime": 86.309,
+    "slowestTime": 90.613,
+    "fieldSize": 24,
+    "poleDriver": "Sebastian Vettel"
+  },
+  {
+    "season": 2011,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 83.529,
+    "avgTime": 86.948,
+    "slowestTime": 94.293,
+    "fieldSize": 24,
+    "poleDriver": "Sebastian Vettel"
+  },
+  {
+    "season": 2012,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 84.922,
+    "avgTime": 87.421,
+    "slowestTime": 93.643,
+    "fieldSize": 24,
+    "poleDriver": "Lewis Hamilton"
+  },
+  {
+    "season": 2013,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 87.407,
+    "avgTime": 96.956,
+    "slowestTime": 110.626,
+    "fieldSize": 22,
+    "poleDriver": "Sebastian Vettel"
+  },
+  {
+    "season": 2014,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 90.775,
+    "avgTime": 93.122,
+    "slowestTime": 96.993,
+    "fieldSize": 21,
+    "poleDriver": "Lewis Hamilton"
+  },
+  {
+    "season": 2015,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 86.327,
+    "avgTime": 88.8,
+    "slowestTime": 92.037,
+    "fieldSize": 18,
+    "poleDriver": "Lewis Hamilton"
+  },
+  {
+    "season": 2016,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 83.837,
+    "avgTime": 86.579,
+    "slowestTime": 89.642,
+    "fieldSize": 22,
+    "poleDriver": "Lewis Hamilton"
+  },
+  {
+    "season": 2017,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 82.188,
+    "avgTime": 84.896,
+    "slowestTime": 88.244,
+    "fieldSize": 20,
+    "poleDriver": "Lewis Hamilton"
+  },
+  {
+    "season": 2018,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 81.164,
+    "avgTime": 83.41,
+    "slowestTime": 85.295,
+    "fieldSize": 20,
+    "poleDriver": "Lewis Hamilton"
+  },
+  {
+    "season": 2019,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 80.486,
+    "avgTime": 82.417,
+    "slowestTime": 86.067,
+    "fieldSize": 20,
+    "poleDriver": "Lewis Hamilton"
+  },
+  {
+    "season": 2022,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 77.868,
+    "avgTime": 79.312,
+    "slowestTime": 81.372,
+    "fieldSize": 19,
+    "poleDriver": "Charles Leclerc"
+  },
+  {
+    "season": 2023,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 76.732,
+    "avgTime": 77.751,
+    "slowestTime": 78.714,
+    "fieldSize": 19,
+    "poleDriver": "Max Verstappen"
+  },
+  {
+    "season": 2024,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 75.915,
+    "avgTime": 77.014,
+    "slowestTime": 78.188,
+    "fieldSize": 19,
+    "poleDriver": "Max Verstappen"
+  },
+  {
+    "season": 2025,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 75.096,
+    "avgTime": 76.069,
+    "slowestTime": 77.147,
+    "fieldSize": 19,
+    "poleDriver": "Lando Norris"
+  },
+  {
+    "season": 2026,
+    "circuit": "albert_park",
+    "circuitName": "Albert Park Grand Prix Circuit",
+    "poleTime": 78.518,
+    "avgTime": 80.318,
+    "slowestTime": 83.244,
+    "fieldSize": 19,
+    "poleDriver": "George Russell"
+  }
+]

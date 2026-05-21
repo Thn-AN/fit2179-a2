@@ -1,0 +1,60 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Australians on the Formula One Grid",
+    "subtitle": "Number of Australian drivers competing in each World Championship season",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "offset": 12,
+    "subtitleColor": "#666"
+  },
+  "width": "container",
+  "height": 380,
+  "background": "transparent",
+  "data": {"url": "data/aussies-per-year.json"},
+  "encoding": {
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "scale": {"domain": [1950, 2026], "nice": false},
+      "axis": {"title": "Season", "tickCount": 10, "format": "d", "labelFontSize": 11}
+    },
+    "y": {
+      "field": "count",
+      "type": "quantitative",
+      "scale": {"domain": [0, 5]},
+      "axis": {"title": "Australian drivers on the grid", "values": [0, 1, 2, 3, 4], "labelFontSize": 11, "grid": true, "gridColor": "#eee"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "area",
+        "color": "#E10600",
+        "opacity": 0.18,
+        "interpolate": "step-after"
+      }
+    },
+    {
+      "mark": {
+        "type": "line",
+        "color": "#E10600",
+        "strokeWidth": 2.2,
+        "interpolate": "step-after"
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 140,
+        "opacity": 0.01,
+        "tooltip": {"content": "data"}
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": null},
+    "font": "system-ui, -apple-system, sans-serif"
+  }
+}

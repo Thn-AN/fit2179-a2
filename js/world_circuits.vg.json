@@ -1,0 +1,71 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Where Australians Have Scored in Formula One",
+    "subtitle": "Every circuit where an Australian has raced, sized by total championship points earned there",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "offset": 12,
+    "subtitleColor": "#666"
+  },
+  "width": "container",
+  "height": 500,
+  "background": "transparent",
+  "projection": {"type": "equalEarth"},
+  "layer": [
+    {
+      "data": {
+        "url": "data/world-110m.topojson",
+        "format": {"type": "topojson", "feature": "countries"}
+      },
+      "mark": {
+        "type": "geoshape",
+        "fill": "#f4ede4",
+        "stroke": "#ffffff",
+        "strokeWidth": 0.5
+      }
+    },
+    {
+      "data": {"url": "data/aus-points-by-circuit.json"},
+      "mark": {
+        "type": "circle",
+        "color": "#E10600",
+        "opacity": 0.6,
+        "stroke": "#8B0000",
+        "strokeWidth": 0.5
+      },
+      "encoding": {
+        "longitude": {"field": "lng", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "size": {
+          "field": "totalPoints",
+          "type": "quantitative",
+          "scale": {"range": [20, 1400]},
+          "legend": {
+            "title": "Points by Australians",
+            "titleFontSize": 11,
+            "labelFontSize": 10,
+            "orient": "bottom-left",
+            "offset": 5,
+            "format": ".0f"
+          }
+        },
+        "tooltip": [
+          {"field": "name", "title": "Circuit"},
+          {"field": "country", "title": "Country"},
+          {"field": "totalPoints", "title": "Total points", "format": ".0f"},
+          {"field": "raceCount", "title": "Race starts"},
+          {"field": "topDriver", "title": "Top scorer"},
+          {"field": "topDriverPoints", "title": "Top scorer pts", "format": ".0f"},
+          {"field": "firstSeason", "title": "First season"},
+          {"field": "lastSeason", "title": "Last season"}
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": null},
+    "font": "system-ui, -apple-system, sans-serif"
+  }
+}

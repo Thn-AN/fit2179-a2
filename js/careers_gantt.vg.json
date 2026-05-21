@@ -1,0 +1,75 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Australians in Formula One, 1952–today",
+    "subtitle": "Every season raced, by every Australian to start a Grand Prix",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "offset": 12,
+    "subtitleColor": "#666"
+  },
+  "width": "container",
+  "height": 540,
+  "background": "transparent",
+  "data": {"url": "data/aussie-seasons.json"},
+  "transform": [
+    {
+      "lookup": "driverId",
+      "from": {
+        "data": {"url": "data/aussie-drivers-bios.json"},
+        "key": "driverId",
+        "fields": ["givenName", "familyName"]
+      }
+    },
+    {"calculate": "datum.givenName + ' ' + datum.familyName", "as": "fullName"},
+    {"calculate": "toNumber(datum.season)", "as": "year"},
+    {"calculate": "toNumber(datum.season) + 1", "as": "yearEnd"},
+    {
+      "joinaggregate": [{"op": "min", "field": "year", "as": "debutYear"}],
+      "groupby": ["driverId"]
+    }
+  ],
+  "mark": {
+    "type": "bar",
+    "fill": "#E10600",
+    "opacity": 0.85,
+    "cornerRadius": 1
+  },
+  "encoding": {
+    "y": {
+      "field": "fullName",
+      "type": "nominal",
+      "sort": {"field": "debutYear", "order": "ascending"},
+      "title": null,
+      "axis": {
+        "labelFontSize": 11,
+        "labelPadding": 6,
+        "domain": false,
+        "ticks": false
+      }
+    },
+    "x": {
+      "field": "year",
+      "type": "quantitative",
+      "scale": {"domain": [1950, 2027]},
+      "axis": {
+        "title": null,
+        "format": "d",
+        "tickCount": 8,
+        "grid": true,
+        "gridColor": "#eee",
+        "labelFontSize": 11
+      }
+    },
+    "x2": {"field": "yearEnd"},
+    "tooltip": [
+      {"field": "fullName", "title": "Driver"},
+      {"field": "year", "title": "Season", "format": "d"}
+    ]
+  },
+  "config": {
+    "view": {"stroke": null},
+    "font": "system-ui, -apple-system, sans-serif"
+  }
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Australia in Formula One</title>
+
+    <!-- Pure.css for layout -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
+
+    <!-- Vega libraries (versions per FIT3179 studio) -->
+    <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="page">
+        <header>
+            <h1>Australia in Formula One</h1>
+            <p class="lede">From Sir Jack Brabham's three world titles to Oscar Piastri's title charge — a visual history of every Australian to race at the highest level.</p>
+        </header>
+
+        <section>
+            <div id="birthplaces_map" class="vis"></div>
+        </section>
+    
+        <section>
+            <div id="careers_gantt" class="vis"></div>
+        </section>
+        
+
+        <section>
+            <div id="world_circuits" class="vis"></div>
+        </section>
+
+        <section>
+            <div id="season_2025_bump" class="vis"></div>
+        </section>
+
+        <section>
+            <div id="aussies_per_year" class="vis"></div>
+        </section>
+
+        <section>
+            <div id="albert_park_pole" class="vis"></div>
+        </section>
+
+        <section>
+            <div id="aussie_season_finishes" class="vis"></div>
+        </section>
+
+        <section>
+            <div id="aus_gp_grid_vs_finish" class="vis"></div>
+         </section>
+
+        <footer>
+            <p>Data: <a href="https://api.jolpi.ca/ergast/f1/">Jolpica F1 API</a> and <a href="https://query.wikidata.org/">Wikidata</a>.</p>
+            <p>Built by Thien-An Luu.</p>
+        </footer>
+    </div>
+
+    <script src="js/vega_lite_vis.js"></script>
+</body>
+</html> 

@@ -1,0 +1,56 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "The 2025 Championship, Race by Race",
+    "subtitle": "Cumulative championship position after each round",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "offset": 12,
+    "subtitleColor": "#666"
+  },
+  "width": "container",
+  "height": 550,
+  "background": "transparent",
+  "data": {"url": "data/season-2025-bump.json"},
+  "encoding": {
+    "x": {
+      "field": "round",
+      "type": "quantitative",
+      "scale": {"domain": [1, 24], "nice": false},
+      "axis": {"title": "Race round", "tickCount": 12, "format": "d", "labelFontSize": 10}
+    },
+    "y": {
+      "field": "rank",
+      "type": "quantitative",
+      "scale": {"domain": [21, 1]},
+      "axis": {"title": "Championship position", "values": [1, 5, 10, 15, 20], "labelFontSize": 10}
+    },
+    "color": {
+      "field": "driverName",
+      "type": "nominal",
+      "legend": {"title": "Driver", "labelFontSize": 9, "symbolSize": 80, "orient": "right"}
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "line",
+        "strokeWidth": 2.2,
+        "opacity": 0.85
+      }
+    },
+    {
+      "mark": {
+        "type": "circle",
+        "size": 120,
+        "opacity": 0.01,
+        "tooltip": {"content": "data"}
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": null},
+    "font": "system-ui, -apple-system, sans-serif"
+  }
+}
