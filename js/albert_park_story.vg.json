@@ -1,0 +1,91 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Albert Park: An Australian Story",
+    "subtitle": "The home Grand Prix circuit, 1996–today, with five turning-point moments for Australian drivers. Despite seven near-misses, no Australian has ever stood on the podium at home.",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "offset": 12,
+    "subtitleColor": "#666",
+    "limit": 800
+  },
+  "width": 900,
+  "height": 700,
+  "background": "transparent",
+  "projection": {"type": "mercator", "scale": 1500000, "center": [144.969, -37.847]},
+  "layer": [
+    {
+      "description": "Kerb (outer light band)",
+      "data": {"url": "data/albert-park.geojson", "format": {"type": "json"}},
+      "mark": {"type": "geoshape", "stroke": "#d8d8d8", "strokeWidth": 36, "filled": false, "strokeCap": "round", "strokeJoin": "round"}
+    },
+    {
+      "description": "Asphalt",
+      "data": {"url": "data/albert-park.geojson", "format": {"type": "json"}},
+      "mark": {"type": "geoshape", "stroke": "#333", "strokeWidth": 24, "filled": false, "strokeCap": "round", "strokeJoin": "round"}
+    },
+    {
+      "description": "Centre line",
+      "data": {"url": "data/albert-park.geojson", "format": {"type": "json"}},
+      "mark": {"type": "geoshape", "stroke": "white", "strokeWidth": 1.4, "strokeDash": [6, 8], "filled": false}
+    },
+    {
+      "description": "Turn marker circles",
+      "data": {"url": "data/albert-park-turns.json"},
+      "mark": {
+        "type": "circle",
+        "color": "white",
+        "stroke": "#222",
+        "strokeWidth": 1.6,
+        "size": 420,
+        "tooltip": {"content": "data"}
+      },
+      "encoding": {
+        "longitude": {"field": "lng", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"}
+      }
+    },
+    {
+      "description": "Turn numbers inside the circles",
+      "data": {"url": "data/albert-park-turns.json"},
+      "mark": {"type": "text", "color": "#222", "fontSize": 13, "fontWeight": "bold"},
+      "encoding": {
+        "longitude": {"field": "lng", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "text": {"field": "turn"}
+      }
+    },
+    {
+      "description": "Story moment markers — red pins",
+      "data": {"url": "data/albert-park-moments.json"},
+      "mark": {
+        "type": "circle",
+        "color": "#E10600",
+        "opacity": 0.95,
+        "stroke": "white",
+        "strokeWidth": 2.5,
+        "size": 600,
+        "tooltip": {"content": "data"}
+      },
+      "encoding": {
+        "longitude": {"field": "lng", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"}
+      }
+    },
+    {
+      "description": "Year inside the red marker",
+      "data": {"url": "data/albert-park-moments.json"},
+      "mark": {"type": "text", "color": "white", "fontSize": 10, "fontWeight": "bold"},
+      "encoding": {
+        "longitude": {"field": "lng", "type": "quantitative"},
+        "latitude": {"field": "lat", "type": "quantitative"},
+        "text": {"field": "year"}
+      }
+    }
+  ],
+  "config": {
+    "view": {"stroke": null},
+    "font": "system-ui, -apple-system, sans-serif"
+  }
+}

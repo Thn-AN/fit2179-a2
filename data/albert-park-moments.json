@@ -1,0 +1,57 @@
+[
+  {
+    "year": 2002,
+    "driver": "Mark Webber",
+    "team": "Minardi",
+    "grid": 18,
+    "finish": 5,
+    "lng": 144.96846,
+    "lat": -37.85017,
+    "headline": "WEBBER P5 ON DEBUT",
+    "story": "Started P18 in a Minardi, finished P5 at his home race \u2014 one of F1's all-time dream debuts. Australia had a new hero."
+  },
+  {
+    "year": 2012,
+    "driver": "Mark Webber",
+    "team": "Red Bull",
+    "grid": 5,
+    "finish": 4,
+    "lng": 144.96519,
+    "lat": -37.84594,
+    "headline": "WEBBER'S P4 \u2014 STILL THE BEST",
+    "story": "Webber qualified P5 and finished P4 at home \u2014 the closest an Australian has ever come to a home podium at Albert Park."
+  },
+  {
+    "year": 2018,
+    "driver": "Daniel Ricciardo",
+    "team": "Red Bull",
+    "grid": 5,
+    "finish": 4,
+    "lng": 144.97088,
+    "lat": -37.84495,
+    "headline": "RICCIARDO REPEATS THE NEAR-MISS",
+    "story": "P4 again \u2014 Ricciardo's best home result, equalling Webber's 2012 finish. Australia still waiting for that podium."
+  },
+  {
+    "year": 2024,
+    "driver": "Oscar Piastri",
+    "team": "McLaren",
+    "grid": 6,
+    "finish": 4,
+    "lng": 144.96487,
+    "lat": -37.83863,
+    "headline": "PIASTRI MAKES IT THREE",
+    "story": "Three different Australian drivers, three P4s at Albert Park. The home podium curse continues."
+  },
+  {
+    "year": 2025,
+    "driver": "Oscar Piastri",
+    "team": "McLaren",
+    "grid": 2,
+    "finish": 9,
+    "lng": 144.97493,
+    "lat": -37.85305,
+    "headline": "PIASTRI'S RAIN HEARTBREAK",
+    "story": "Front row in qualifying, then a wet race went sideways: Piastri ran wide, dropped to P9. The title-fight year started badly at home."
+  }
+]

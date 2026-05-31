@@ -1,0 +1,57 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Australia's F1 Record, All-Time",
+    "subtitle": "Every Grand Prix start by an Australian, broken down by outcome — sorted by total podiums",
+    "fontSize": 18,
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "offset": 12,
+    "subtitleColor": "#666"
+  },
+  "width": "container",
+  "height": 460,
+  "background": "transparent",
+  "data": {"url": "data/aussie-records.json"},
+  "transform": [
+    {"filter": "datum.races >= 8"}
+  ],
+  "mark": {
+    "type": "bar",
+    "tooltip": {"content": "data"}
+  },
+  "encoding": {
+    "x": {
+      "field": "count",
+      "type": "quantitative",
+      "stack": "zero",
+      "axis": {"title": "Race starts", "labelFontSize": 11, "grid": true, "gridColor": "#eee"}
+    },
+    "y": {
+      "field": "driver",
+      "type": "nominal",
+      "sort": {"field": "totalPodiums", "order": "descending"},
+      "axis": {"title": null, "labelFontSize": 11, "labelPadding": 6, "domain": false, "ticks": false}
+    },
+    "color": {
+      "field": "category",
+      "type": "nominal",
+      "scale": {
+        "domain": ["Wins", "Podiums (2nd–3rd)", "Other points finishes", "No points"],
+        "range": ["#7a0000", "#E10600", "#f08585", "#e8e8e8"]
+      },
+      "legend": {
+        "title": "Race outcome",
+        "orient": "bottom",
+        "labelFontSize": 10,
+        "titleFontSize": 11,
+        "direction": "horizontal"
+      }
+    },
+    "order": {"field": "category", "type": "nominal"}
+  },
+  "config": {
+    "view": {"stroke": null},
+    "font": "system-ui, -apple-system, sans-serif"
+  }
+}

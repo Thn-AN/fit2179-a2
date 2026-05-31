@@ -5,10 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Australia in Formula One</title>
 
-  <!-- Pure.css for layout -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css">
 
-  <!-- Vega libraries -->
   <script src="https://cdn.jsdelivr.net/npm/vega@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-lite@5"></script>
   <script src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
@@ -20,152 +18,233 @@
 
   <main class="page">
     <header class="hero">
-      <p class="eyebrow">Australian motorsport, mapped and measured</p>
+      <p class="eyebrow">A visual history of Australian Formula One</p>
       <h1>Australia in Formula One</h1>
       <p class="lede">
-        From Jack Brabham's world titles to the newest generation of Australian drivers, this visual story follows where Australia's Formula One talent comes from, where they race, and how they perform across seasons.
+        From Jack Brabham's three world titles to Oscar Piastri's modern title charge, Australia has produced a small but unusually influential group of Formula One drivers. This story follows where they came from, how long they lasted, where they scored, and why the home race remains unfinished business.
       </p>
 
       <div class="hero-grid" aria-label="Visualisation summary">
         <div class="summary-card">
-          <span class="summary-label">Geography</span>
-          <strong>Birthplaces and circuits</strong>
-          <p>Maps connect Australian drivers to local origins and global race venues.</p>
+          <span class="summary-label">Drivers</span>
+          <strong>Nineteen Australian starters</strong>
+          <p>Birthplaces and career timelines show the geography and rhythm of Australian participation.</p>
         </div>
         <div class="summary-card">
-          <span class="summary-label">History</span>
-          <strong>1952 to today</strong>
-          <p>Career timelines reveal long gaps, dominant eras, and modern continuity.</p>
+          <span class="summary-label">Record</span>
+          <strong>Champions, wins and droughts</strong>
+          <p>Season results and all-time records reveal dominance, gaps and recent resurgence.</p>
         </div>
         <div class="summary-card">
-          <span class="summary-label">Performance</span>
-          <strong>Grid, race and season results</strong>
-          <p>Position charts compare qualifying advantage, finishing results and championship patterns.</p>
+          <span class="summary-label">Home race</span>
+          <strong>Near misses at Albert Park</strong>
+          <p>Australian Grand Prix charts show pace, race craft and repeated podium heartbreak.</p>
         </div>
       </div>
     </header>
 
+    <section class="chapter-intro" aria-labelledby="chapter-origins">
+      <p class="section-kicker">01 / Origins</p>
+      <h2 id="chapter-origins">Nineteen drivers, one uneven pathway</h2>
+      <p>
+        Australia is not a Formula One production line in the way Britain, Germany or Italy has been. There is no long-running F1 manufacturer, and the home crowd only sees the championship once a year. Yet since 1952, Australian drivers have repeatedly broken through, producing world champions, race winners and current title contenders.
+      </p>
+    </section>
+
     <section class="story-section section-map">
       <div class="section-copy">
-        <p class="section-kicker">01 / Origins</p>
+        <p class="section-kicker">Birthplaces</p>
         <h2>Where Australia's F1 drivers were born</h2>
         <p>
-          The first map grounds the story in Australia. It shows that Formula One drivers are not evenly distributed across the country, with several birthplaces clustered around the south-eastern motorsport corridor and only a small number coming from the west and north.
+          The map grounds the story geographically. Sydney and Melbourne dominate the pattern, while outliers such as Perth, Queanbeyan and Whyalla show that Australian F1 careers have also emerged from outside the obvious motorsport centres.
         </p>
       </div>
-      <div class="chart-card large-card">
+      <figure class="chart-card large-card">
         <div id="birthplaces_map" class="vis"></div>
-      </div>
+        <figcaption>
+          The birthplace map makes the national pattern visible before the statistics begin. The strongest cluster sits in the south-east, while the spread across Perth, South Australia and regional New South Wales suggests that Australian F1 success has never come from one single pipeline.
+        </figcaption>
+      </figure>
     </section>
 
     <section class="story-section two-column">
       <div class="section-copy">
-        <p class="section-kicker">02 / Careers</p>
-        <h2>Australian F1 careers, 1952 to today</h2>
+        <p class="section-kicker">Careers</p>
+        <h2>Short appearances, long careers and empty decades</h2>
         <p>
-          The career timeline separates brief appearances from long-running careers. Earlier Australian participation appears in short blocks, while the contemporary era shows more continuous representation through drivers such as Mark Webber, Daniel Ricciardo and Oscar Piastri.
+          The timeline separates one-off or brief careers from sustained eras of representation. It also shows the gaps, especially the long drought before Mark Webber returned Australia to the grid in the early 2000s.
         </p>
-        <p class="note">
-          Read each row as one driver. Longer red runs mean more seasons on the Formula One grid.
-        </p>
+        <p class="note">Read each row as one driver. Longer bars mean more seasons on the Formula One grid.</p>
       </div>
-      <div class="chart-card">
+      <figure class="chart-card">
         <div id="careers_gantt" class="vis"></div>
+        <figcaption>
+          Jack Brabham's sixteen consecutive seasons remain the benchmark. Webber, Ricciardo and Piastri then form the modern continuity, turning what had been an intermittent national presence into a more stable Australian era.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter-intro" aria-labelledby="chapter-record">
+      <p class="section-kicker">02 / The record</p>
+      <h2 id="chapter-record">A small driver pool with a disproportionate record</h2>
+      <p>
+        Australia's F1 story is not defined by volume. It is defined by a handful of unusually successful careers. Three world titles, race wins across multiple eras and a new generation of front-runners make the national record much larger than the number of drivers suggests.
+      </p>
+    </section>
+
+    <section class="story-section two-column reverse">
+      <div class="section-copy">
+        <p class="section-kicker">All-time outcomes</p>
+        <h2>Who converted starts into results?</h2>
+        <p>
+          The records chart compares Australian drivers by their career outcomes. It makes the difference between participation and impact clearer, separating frequent starters from drivers who regularly reached wins, podiums or points.
+        </p>
       </div>
+      <figure class="chart-card">
+        <div id="aussie_records" class="vis"></div>
+        <figcaption>
+          Brabham and Jones carry the early championship legacy, while Webber, Ricciardo and Piastri show the modern performance wave. The contrast between starts and high-value finishes helps explain why some shorter careers still feel historically significant.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="story-section two-column">
+      <div class="section-copy">
+        <p class="section-kicker">Season finishes</p>
+        <h2>Strong seasons appear as red streaks</h2>
+        <p>
+          The heatmap turns season-by-season performance into a compact historical record. Darker cells reveal championship years, prime competitive windows and the fading or rising form of individual drivers.
+        </p>
+        <p class="note">Darker red indicates stronger average finishing performance or better season outcomes.</p>
+      </div>
+      <figure class="chart-card">
+        <div id="aussie_season_finishes" class="vis"></div>
+        <figcaption>
+          Brabham's title years, Jones's 1980 championship, Webber's Red Bull peak and Ricciardo's strongest Red Bull seasons stand out as concentrated blocks rather than isolated results.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="story-section two-column reverse">
+      <div class="section-copy">
+        <p class="section-kicker">Presence</p>
+        <h2>How many Australians were on the grid each year?</h2>
+        <p>
+          Representation has never been constant. Some seasons had multiple Australians racing at once, while others had none at all. This chart shows the national presence as a rhythm of peaks, droughts and recent recovery.
+        </p>
+      </div>
+      <figure class="chart-card">
+        <div id="aussies_per_year" class="vis"></div>
+        <figcaption>
+          The peak does not belong to the newest era. Earlier seasons produced moments with several Australians on the grid, but the late 1990s and early 2000s show how quickly that presence could disappear.
+        </figcaption>
+      </figure>
     </section>
 
     <section class="story-section section-map">
       <div class="section-copy">
-        <p class="section-kicker">03 / Global reach</p>
-        <h2>Where Australians have scored in Formula One</h2>
+        <p class="section-kicker">03 / World stage</p>
+        <h2>Where Australians have scored around the world</h2>
         <p>
-          Formula One is a global championship, but Australian success has concentrated around recurring European and Asian circuits, with only a smaller spread across the Americas and Oceania. Larger circles indicate tracks where Australian drivers have collected more points.
+          Formula One is global, but points are not distributed evenly. The circuit map shows where Australian drivers have turned starts into measurable success, with larger bubbles marking tracks where Australians collected more championship points.
         </p>
       </div>
-      <div class="chart-card large-card">
+      <figure class="chart-card large-card">
         <div id="world_circuits" class="vis"></div>
+        <figcaption>
+          The map reveals an era effect. Traditional European circuits carry much of the long-term record, while Asian and Middle Eastern circuits mostly reflect the modern careers of Webber, Ricciardo and Piastri.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter-intro" aria-labelledby="chapter-home-race">
+      <p class="section-kicker">04 / The home race</p>
+      <h2 id="chapter-home-race">Albert Park is the emotional centre of the story</h2>
+      <p>
+        The Australian Grand Prix gives the national story a home stage. Since the race moved to Melbourne, Australians have had memorable qualifying sessions, strong race recoveries and repeated near-podium finishes, but still no home podium at Albert Park.
+      </p>
+    </section>
+
+    <section class="story-section section-map">
+      <div class="section-copy">
+        <p class="section-kicker">Albert Park moments</p>
+        <h2>The circuit as a map of near misses</h2>
+        <p>
+          The story map pins key Australian moments to the track itself. Instead of treating the circuit as background, it becomes the place where national expectation, qualifying pressure and race-day disappointment are located.
+        </p>
       </div>
+      <figure class="chart-card large-card">
+        <div id="albert_park_story" class="vis"></div>
+        <figcaption>
+          The pinned moments show why Albert Park matters beyond lap times. Several markers sit only one result away from a home podium, turning the circuit into a visual record of what Australia has almost achieved at its own Grand Prix.
+        </figcaption>
+      </figure>
     </section>
 
     <section class="story-section two-column reverse">
       <div class="section-copy">
-        <p class="section-kicker">04 / Current season</p>
-        <h2>The 2025 championship race by race</h2>
+        <p class="section-kicker">Pole pace</p>
+        <h2>How fast has Albert Park become?</h2>
         <p>
-          The bump chart turns each race into a change in championship order. It highlights how drivers rise or fall through the standings, making the season feel like a sequence of momentum shifts rather than a static table.
+          Pole position times show how car speed, regulations and circuit conditions have changed. The overall direction is faster, but rule changes and wet or unusual sessions interrupt the trend.
         </p>
-        <p class="note">
-          Lower lines are better because championship rank 1 is the leader.
-        </p>
+        <p class="note">Lower lap time means a faster pole lap.</p>
       </div>
-      <div class="chart-card">
-        <div id="season_2025_bump" class="vis"></div>
-      </div>
-    </section>
-
-    <section class="story-section two-column">
-      <div class="section-copy">
-        <p class="section-kicker">05 / Presence</p>
-        <h2>Australians on the Formula One grid</h2>
-        <p>
-          The area chart shows how Australia's representation has changed over time. Peaks indicate seasons with multiple Australian drivers competing at once, while flatter periods show years when the country had only one regular representative or none at all.
-        </p>
-      </div>
-      <div class="chart-card">
-        <div id="aussies_per_year" class="vis"></div>
-      </div>
-    </section>
-
-    <section class="story-section two-column reverse">
-      <div class="section-copy">
-        <p class="section-kicker">06 / Home race</p>
-        <h2>The Australian Grand Prix in seconds</h2>
-        <p>
-          Pole position pace at Albert Park reflects both car development and changing race conditions. The highlighted trend helps viewers see the overall direction, while the background bands keep each regulatory era visually distinct.
-        </p>
-        <p class="note">
-          Lower lap time means a faster pole lap.
-        </p>
-      </div>
-      <div class="chart-card">
+      <figure class="chart-card">
         <div id="albert_park_pole" class="vis"></div>
-      </div>
+        <figcaption>
+          The drops and jumps make the race technical as well as emotional. Faster modern laps sit beside regulatory resets, showing that the home race is shaped by both driver performance and changing car eras.
+        </figcaption>
+      </figure>
     </section>
 
     <section class="story-section two-column">
       <div class="section-copy">
-        <p class="section-kicker">07 / Results</p>
-        <h2>Australian drivers, season by season</h2>
+        <p class="section-kicker">Grid versus finish</p>
+        <h2>Did Australians gain or lose ground at home?</h2>
         <p>
-          The heatmap compares each Australian driver's end-of-season result. Darker red cells mark stronger championship finishes, making the leading eras stand out while still preserving the full historical record.
+          Starting position does not always predict the final result. This chart compares where drivers qualified against where they finished, highlighting whether Australian drivers moved forward, slipped back or held position.
         </p>
+        <p class="note">Australian drivers are highlighted against the wider Australian Grand Prix field.</p>
       </div>
-      <div class="chart-card">
-        <div id="aussie_season_finishes" class="vis"></div>
-      </div>
+      <figure class="chart-card">
+        <div id="aus_gp_grid_vs_finish" class="vis"></div>
+        <figcaption>
+          The Australian points cluster around the upper midfield rather than the podium positions. Webber and Piastri's fourth-place results sit closest to the missing home podium the country still waits for.
+        </figcaption>
+      </figure>
+    </section>
+
+    <section class="chapter-intro" aria-labelledby="chapter-current">
+      <p class="section-kicker">05 / Current season</p>
+      <h2 id="chapter-current">The modern story is still moving</h2>
+      <p>
+        Oscar Piastri's rise gives the historical record a live endpoint. The 2025 championship chart turns the season into a sequence of momentum changes, showing how quickly a title challenge can build, stall or be overtaken.
+      </p>
     </section>
 
     <section class="story-section two-column reverse final-section">
       <div class="section-copy">
-        <p class="section-kicker">08 / Race craft</p>
-        <h2>Does pole position help at home?</h2>
+        <p class="section-kicker">2025 championship</p>
+        <h2>Race-by-race momentum</h2>
         <p>
-          The grid-versus-finish plot compares where drivers started and where they ended the Australian Grand Prix. Points above or below the guide line reveal whether a driver gained or lost positions during the race.
+          The bump chart converts the championship table into a race narrative. Lines rising and falling show pressure, consistency and late-season changes more clearly than a static final standings table.
         </p>
-        <p class="note">
-          Red points highlight Australian drivers against the wider field.
-        </p>
+        <p class="note">Lower lines are better because championship rank 1 is the leader.</p>
       </div>
-      <div class="chart-card">
-        <div id="aus_gp_grid_vs_finish" class="vis"></div>
-      </div>
+      <figure class="chart-card">
+        <div id="season_2025_bump" class="vis"></div>
+        <figcaption>
+          Piastri's 2025 challenge connects the historical sections to the present. Australia's F1 story is no longer only about Brabham, Jones, Webber and Ricciardo; it is actively being extended.
+        </figcaption>
+      </figure>
     </section>
 
     <section class="takeaway-panel" aria-labelledby="takeaway-title">
       <p class="section-kicker">Final takeaway</p>
-      <h2 id="takeaway-title">Australia's Formula One story is small in numbers, but wide in reach.</h2>
+      <h2 id="takeaway-title">Australia's Formula One history is small in numbers, but large in consequence.</h2>
       <p>
-        The visualisations show a country with only a limited number of Formula One drivers, yet a history that spans world champions, long modern careers, international points finishes and an increasingly visible home-race identity.
+        The visualisations show a country with only a limited number of Formula One drivers, yet a record that spans world champions, long modern careers, global points finishes and repeated near-misses at home. The story is not one of constant representation; it is one of rare drivers making unusually large impacts.
       </p>
     </section>
 

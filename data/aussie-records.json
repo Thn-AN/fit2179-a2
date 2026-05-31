@@ -1,0 +1,642 @@
+[
+  {
+    "driver": "Jack Brabham",
+    "driverId": "jack_brabham",
+    "category": "Wins",
+    "count": 13,
+    "totalPodiums": 25,
+    "totalPoints": 220.0,
+    "races": 100,
+    "span": "1955\u20131968"
+  },
+  {
+    "driver": "Jack Brabham",
+    "driverId": "jack_brabham",
+    "category": "Podiums (2nd\u20133rd)",
+    "count": 12,
+    "totalPodiums": 25,
+    "totalPoints": 220.0,
+    "races": 100,
+    "span": "1955\u20131968"
+  },
+  {
+    "driver": "Jack Brabham",
+    "driverId": "jack_brabham",
+    "category": "Other points finishes",
+    "count": 19,
+    "totalPodiums": 25,
+    "totalPoints": 220.0,
+    "races": 100,
+    "span": "1955\u20131968"
+  },
+  {
+    "driver": "Jack Brabham",
+    "driverId": "jack_brabham",
+    "category": "No points",
+    "count": 56,
+    "totalPodiums": 25,
+    "totalPoints": 220.0,
+    "races": 100,
+    "span": "1955\u20131968"
+  },
+  {
+    "driver": "David Brabham",
+    "driverId": "brabham",
+    "category": "Wins",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 24,
+    "span": "1990\u20131994"
+  },
+  {
+    "driver": "David Brabham",
+    "driverId": "brabham",
+    "category": "Podiums (2nd\u20133rd)",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 24,
+    "span": "1990\u20131994"
+  },
+  {
+    "driver": "David Brabham",
+    "driverId": "brabham",
+    "category": "Other points finishes",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 24,
+    "span": "1990\u20131994"
+  },
+  {
+    "driver": "David Brabham",
+    "driverId": "brabham",
+    "category": "No points",
+    "count": 24,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 24,
+    "span": "1990\u20131994"
+  },
+  {
+    "driver": "Warwick Brown",
+    "driverId": "brown",
+    "category": "Wins",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 1,
+    "span": "1976\u20131976"
+  },
+  {
+    "driver": "Warwick Brown",
+    "driverId": "brown",
+    "category": "Podiums (2nd\u20133rd)",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 1,
+    "span": "1976\u20131976"
+  },
+  {
+    "driver": "Warwick Brown",
+    "driverId": "brown",
+    "category": "Other points finishes",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 1,
+    "span": "1976\u20131976"
+  },
+  {
+    "driver": "Warwick Brown",
+    "driverId": "brown",
+    "category": "No points",
+    "count": 1,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 1,
+    "span": "1976\u20131976"
+  },
+  {
+    "driver": "Jack Doohan",
+    "driverId": "doohan",
+    "category": "Wins",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 7,
+    "span": "2024\u20132025"
+  },
+  {
+    "driver": "Jack Doohan",
+    "driverId": "doohan",
+    "category": "Podiums (2nd\u20133rd)",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 7,
+    "span": "2024\u20132025"
+  },
+  {
+    "driver": "Jack Doohan",
+    "driverId": "doohan",
+    "category": "Other points finishes",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 7,
+    "span": "2024\u20132025"
+  },
+  {
+    "driver": "Jack Doohan",
+    "driverId": "doohan",
+    "category": "No points",
+    "count": 7,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 7,
+    "span": "2024\u20132025"
+  },
+  {
+    "driver": "Paul England",
+    "driverId": "england",
+    "category": "Wins",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 1,
+    "span": "1957\u20131957"
+  },
+  {
+    "driver": "Paul England",
+    "driverId": "england",
+    "category": "Podiums (2nd\u20133rd)",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 1,
+    "span": "1957\u20131957"
+  },
+  {
+    "driver": "Paul England",
+    "driverId": "england",
+    "category": "Other points finishes",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 1,
+    "span": "1957\u20131957"
+  },
+  {
+    "driver": "Paul England",
+    "driverId": "england",
+    "category": "No points",
+    "count": 1,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 1,
+    "span": "1957\u20131957"
+  },
+  {
+    "driver": "Frank Gardner",
+    "driverId": "gardner",
+    "category": "Wins",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 8,
+    "span": "1964\u20131965"
+  },
+  {
+    "driver": "Frank Gardner",
+    "driverId": "gardner",
+    "category": "Podiums (2nd\u20133rd)",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 8,
+    "span": "1964\u20131965"
+  },
+  {
+    "driver": "Frank Gardner",
+    "driverId": "gardner",
+    "category": "Other points finishes",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 8,
+    "span": "1964\u20131965"
+  },
+  {
+    "driver": "Frank Gardner",
+    "driverId": "gardner",
+    "category": "No points",
+    "count": 8,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 8,
+    "span": "1964\u20131965"
+  },
+  {
+    "driver": "Tony Gaze",
+    "driverId": "gaze",
+    "category": "Wins",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 3,
+    "span": "1952\u20131952"
+  },
+  {
+    "driver": "Tony Gaze",
+    "driverId": "gaze",
+    "category": "Podiums (2nd\u20133rd)",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 3,
+    "span": "1952\u20131952"
+  },
+  {
+    "driver": "Tony Gaze",
+    "driverId": "gaze",
+    "category": "Other points finishes",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 3,
+    "span": "1952\u20131952"
+  },
+  {
+    "driver": "Tony Gaze",
+    "driverId": "gaze",
+    "category": "No points",
+    "count": 3,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 3,
+    "span": "1952\u20131952"
+  },
+  {
+    "driver": "Paul Hawkins",
+    "driverId": "hawkins",
+    "category": "Wins",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 3,
+    "span": "1965\u20131965"
+  },
+  {
+    "driver": "Paul Hawkins",
+    "driverId": "hawkins",
+    "category": "Podiums (2nd\u20133rd)",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 3,
+    "span": "1965\u20131965"
+  },
+  {
+    "driver": "Paul Hawkins",
+    "driverId": "hawkins",
+    "category": "Other points finishes",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 3,
+    "span": "1965\u20131965"
+  },
+  {
+    "driver": "Paul Hawkins",
+    "driverId": "hawkins",
+    "category": "No points",
+    "count": 3,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 3,
+    "span": "1965\u20131965"
+  },
+  {
+    "driver": "Alan Jones",
+    "driverId": "jones",
+    "category": "Wins",
+    "count": 12,
+    "totalPodiums": 24,
+    "totalPoints": 206.0,
+    "races": 117,
+    "span": "1975\u20131986"
+  },
+  {
+    "driver": "Alan Jones",
+    "driverId": "jones",
+    "category": "Podiums (2nd\u20133rd)",
+    "count": 12,
+    "totalPodiums": 24,
+    "totalPoints": 206.0,
+    "races": 117,
+    "span": "1975\u20131986"
+  },
+  {
+    "driver": "Alan Jones",
+    "driverId": "jones",
+    "category": "Other points finishes",
+    "count": 15,
+    "totalPodiums": 24,
+    "totalPoints": 206.0,
+    "races": 117,
+    "span": "1975\u20131986"
+  },
+  {
+    "driver": "Alan Jones",
+    "driverId": "jones",
+    "category": "No points",
+    "count": 78,
+    "totalPodiums": 24,
+    "totalPoints": 206.0,
+    "races": 117,
+    "span": "1975\u20131986"
+  },
+  {
+    "driver": "Larry Perkins",
+    "driverId": "perkins",
+    "category": "Wins",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 11,
+    "span": "1976\u20131977"
+  },
+  {
+    "driver": "Larry Perkins",
+    "driverId": "perkins",
+    "category": "Podiums (2nd\u20133rd)",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 11,
+    "span": "1976\u20131977"
+  },
+  {
+    "driver": "Larry Perkins",
+    "driverId": "perkins",
+    "category": "Other points finishes",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 11,
+    "span": "1976\u20131977"
+  },
+  {
+    "driver": "Larry Perkins",
+    "driverId": "perkins",
+    "category": "No points",
+    "count": 11,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 11,
+    "span": "1976\u20131977"
+  },
+  {
+    "driver": "Oscar Piastri",
+    "driverId": "piastri",
+    "category": "Wins",
+    "count": 9,
+    "totalPodiums": 28,
+    "totalPoints": 761.0,
+    "races": 74,
+    "span": "2023\u20132026"
+  },
+  {
+    "driver": "Oscar Piastri",
+    "driverId": "piastri",
+    "category": "Podiums (2nd\u20133rd)",
+    "count": 19,
+    "totalPodiums": 28,
+    "totalPoints": 761.0,
+    "races": 74,
+    "span": "2023\u20132026"
+  },
+  {
+    "driver": "Oscar Piastri",
+    "driverId": "piastri",
+    "category": "Other points finishes",
+    "count": 30,
+    "totalPodiums": 28,
+    "totalPoints": 761.0,
+    "races": 74,
+    "span": "2023\u20132026"
+  },
+  {
+    "driver": "Oscar Piastri",
+    "driverId": "piastri",
+    "category": "No points",
+    "count": 16,
+    "totalPodiums": 28,
+    "totalPoints": 761.0,
+    "races": 74,
+    "span": "2023\u20132026"
+  },
+  {
+    "driver": "Daniel Ricciardo",
+    "driverId": "ricciardo",
+    "category": "Wins",
+    "count": 8,
+    "totalPodiums": 32,
+    "totalPoints": 1320.0,
+    "races": 257,
+    "span": "2011\u20132024"
+  },
+  {
+    "driver": "Daniel Ricciardo",
+    "driverId": "ricciardo",
+    "category": "Podiums (2nd\u20133rd)",
+    "count": 24,
+    "totalPodiums": 32,
+    "totalPoints": 1320.0,
+    "races": 257,
+    "span": "2011\u20132024"
+  },
+  {
+    "driver": "Daniel Ricciardo",
+    "driverId": "ricciardo",
+    "category": "Other points finishes",
+    "count": 103,
+    "totalPodiums": 32,
+    "totalPoints": 1320.0,
+    "races": 257,
+    "span": "2011\u20132024"
+  },
+  {
+    "driver": "Daniel Ricciardo",
+    "driverId": "ricciardo",
+    "category": "No points",
+    "count": 122,
+    "totalPodiums": 32,
+    "totalPoints": 1320.0,
+    "races": 257,
+    "span": "2011\u20132024"
+  },
+  {
+    "driver": "Tim Schenken",
+    "driverId": "schenken",
+    "category": "Wins",
+    "count": 0,
+    "totalPodiums": 1,
+    "totalPoints": 7.0,
+    "races": 34,
+    "span": "1970\u20131974"
+  },
+  {
+    "driver": "Tim Schenken",
+    "driverId": "schenken",
+    "category": "Podiums (2nd\u20133rd)",
+    "count": 1,
+    "totalPodiums": 1,
+    "totalPoints": 7.0,
+    "races": 34,
+    "span": "1970\u20131974"
+  },
+  {
+    "driver": "Tim Schenken",
+    "driverId": "schenken",
+    "category": "Other points finishes",
+    "count": 2,
+    "totalPodiums": 1,
+    "totalPoints": 7.0,
+    "races": 34,
+    "span": "1970\u20131974"
+  },
+  {
+    "driver": "Tim Schenken",
+    "driverId": "schenken",
+    "category": "No points",
+    "count": 31,
+    "totalPodiums": 1,
+    "totalPoints": 7.0,
+    "races": 34,
+    "span": "1970\u20131974"
+  },
+  {
+    "driver": "Vern Schuppan",
+    "driverId": "schuppan",
+    "category": "Wins",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 9,
+    "span": "1974\u20131977"
+  },
+  {
+    "driver": "Vern Schuppan",
+    "driverId": "schuppan",
+    "category": "Podiums (2nd\u20133rd)",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 9,
+    "span": "1974\u20131977"
+  },
+  {
+    "driver": "Vern Schuppan",
+    "driverId": "schuppan",
+    "category": "Other points finishes",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 9,
+    "span": "1974\u20131977"
+  },
+  {
+    "driver": "Vern Schuppan",
+    "driverId": "schuppan",
+    "category": "No points",
+    "count": 9,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 9,
+    "span": "1974\u20131977"
+  },
+  {
+    "driver": "David Walker",
+    "driverId": "walker",
+    "category": "Wins",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 11,
+    "span": "1971\u20131972"
+  },
+  {
+    "driver": "David Walker",
+    "driverId": "walker",
+    "category": "Podiums (2nd\u20133rd)",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 11,
+    "span": "1971\u20131972"
+  },
+  {
+    "driver": "David Walker",
+    "driverId": "walker",
+    "category": "Other points finishes",
+    "count": 0,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 11,
+    "span": "1971\u20131972"
+  },
+  {
+    "driver": "David Walker",
+    "driverId": "walker",
+    "category": "No points",
+    "count": 11,
+    "totalPodiums": 0,
+    "totalPoints": 0.0,
+    "races": 11,
+    "span": "1971\u20131972"
+  },
+  {
+    "driver": "Mark Webber",
+    "driverId": "webber",
+    "category": "Wins",
+    "count": 9,
+    "totalPodiums": 42,
+    "totalPoints": 1047.5,
+    "races": 217,
+    "span": "2002\u20132013"
+  },
+  {
+    "driver": "Mark Webber",
+    "driverId": "webber",
+    "category": "Podiums (2nd\u20133rd)",
+    "count": 33,
+    "totalPodiums": 42,
+    "totalPoints": 1047.5,
+    "races": 217,
+    "span": "2002\u20132013"
+  },
+  {
+    "driver": "Mark Webber",
+    "driverId": "webber",
+    "category": "Other points finishes",
+    "count": 70,
+    "totalPodiums": 42,
+    "totalPoints": 1047.5,
+    "races": 217,
+    "span": "2002\u20132013"
+  },
+  {
+    "driver": "Mark Webber",
+    "driverId": "webber",
+    "category": "No points",
+    "count": 105,
+    "totalPodiums": 42,
+    "totalPoints": 1047.5,
+    "races": 217,
+    "span": "2002\u20132013"
+  }
+]

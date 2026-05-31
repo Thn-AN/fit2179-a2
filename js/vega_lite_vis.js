@@ -21,3 +21,9 @@ vegaEmbed("#aussie_season_finishes", vg_7, {"actions": false}).catch(console.err
 
 var vg_8 = "js/aus_gp_grid_vs_finish.vg.json";
 vegaEmbed("#aus_gp_grid_vs_finish", vg_8, {"actions": false}).catch(console.error);
+
+var vg_9 = "js/albert_park_story.vg.json";
+vegaEmbed("#albert_park_story", vg_9, {"actions": false}).catch(console.error);
+
+var vg_10 = "js/aussie_records.vg.json";
+vegaEmbed("#aussie_records", vg_10, {"actions": false}).catch(console.error);

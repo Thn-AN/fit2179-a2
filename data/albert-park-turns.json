@@ -1,0 +1,114 @@
+[
+  {
+    "turn": 1,
+    "lng": 144.965997,
+    "lat": -37.847585,
+    "name": "Turn 1",
+    "distance_m": 337,
+    "note": "Sharp right after main straight \u2014 heavy braking"
+  },
+  {
+    "turn": 2,
+    "lng": 144.966134,
+    "lat": -37.846408,
+    "name": "Turn 2",
+    "distance_m": 473,
+    "note": "Right-hand kink"
+  },
+  {
+    "turn": 3,
+    "lng": 144.962149,
+    "lat": -37.842193,
+    "name": "Turn 3",
+    "distance_m": 1066,
+    "note": "DRS overtaking zone, hard braking"
+  },
+  {
+    "turn": 4,
+    "lng": 144.963638,
+    "lat": -37.841842,
+    "name": "Turn 4",
+    "distance_m": 1206,
+    "note": "Fast right onto the lakeside section"
+  },
+  {
+    "turn": 5,
+    "lng": 144.963686,
+    "lat": -37.839876,
+    "name": "Turn 5",
+    "distance_m": 1427,
+    "note": "Quick left at the lake edge"
+  },
+  {
+    "turn": 6,
+    "lng": 144.967972,
+    "lat": -37.838005,
+    "name": "Turn 6",
+    "distance_m": 1863,
+    "note": "Sweeping right by the lake"
+  },
+  {
+    "turn": 7,
+    "lng": 144.970926,
+    "lat": -37.839083,
+    "name": "Turn 7",
+    "distance_m": 2159,
+    "note": "Left-right flick on the back section"
+  },
+  {
+    "turn": 8,
+    "lng": 144.971775,
+    "lat": -37.841713,
+    "name": "Turn 8",
+    "distance_m": 2467,
+    "note": "Right at the end of the back straight"
+  },
+  {
+    "turn": 9,
+    "lng": 144.973217,
+    "lat": -37.847992,
+    "name": "Turn 9",
+    "distance_m": 3274,
+    "note": "High-speed right onto the lake straight"
+  },
+  {
+    "turn": 10,
+    "lng": 144.974837,
+    "lat": -37.848123,
+    "name": "Turn 10",
+    "distance_m": 3419,
+    "note": "Left at the top of the lake \u2014 fastest part of the lap"
+  },
+  {
+    "turn": 11,
+    "lng": 144.97859,
+    "lat": -37.853141,
+    "name": "Turn 11",
+    "distance_m": 4096,
+    "note": "Tight right after the back straight"
+  },
+  {
+    "turn": 12,
+    "lng": 144.976003,
+    "lat": -37.853926,
+    "name": "Turn 12",
+    "distance_m": 4340,
+    "note": "Slow chicane \u2014 overtaking opportunity"
+  },
+  {
+    "turn": 13,
+    "lng": 144.974149,
+    "lat": -37.852065,
+    "name": "Turn 13",
+    "distance_m": 4614,
+    "note": "Sweeping right onto the home straight"
+  },
+  {
+    "turn": 14,
+    "lng": 144.972771,
+    "lat": -37.852883,
+    "name": "Turn 14",
+    "distance_m": 4773,
+    "note": "Final right back onto the main straight"
+  }
+]

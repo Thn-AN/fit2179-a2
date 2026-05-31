@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "Does Pole Position Help at Home?",
-    "subtitle": "Every Australian Grand Prix starter, Adelaide 1985 onwards — grid position vs final classified finish. Australians in red.",
+    "subtitle": "Every Australian Grand Prix starter, grid position vs final classified finish. Australians in red.",
     "fontSize": 18,
     "subtitleFontSize": 12,
     "anchor": "start",

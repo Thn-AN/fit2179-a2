@@ -2,7 +2,7 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "title": {
     "text": "The 2025 Championship, Race by Race",
-    "subtitle": "Cumulative championship position after each round",
+    "subtitle": "Cumulative championship position after each round — line colour shows the driver's primary team",
     "fontSize": 18,
     "subtitleFontSize": 12,
     "anchor": "start",
@@ -27,10 +27,12 @@
       "axis": {"title": "Championship position", "values": [1, 5, 10, 15, 20], "labelFontSize": 10}
     },
     "color": {
-      "field": "driverName",
+      "field": "lineColor",
       "type": "nominal",
-      "legend": {"title": "Driver", "labelFontSize": 9, "symbolSize": 80, "orient": "right"}
-    }
+      "scale": null,
+      "legend": null
+    },
+    "detail": {"field": "driverId"}
   },
   "layer": [
     {
